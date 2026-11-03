@@ -23,10 +23,3 @@
 
 ## Использованные технологии
 HTML5, CSS3, JavaScript (без сторонних библиотек), Web Storage API (`localStorage`).
-
-## Публикация на GitHub Pages
-1. Создайте публичный репозиторий на GitHub, например `todo-list`.
-2. Загрузите в него три файла проекта и этот README.
-3. Откройте **Settings → Pages**.
-4. В разделе **Build and deployment** выберите **Deploy from a branch**, ветку `main` и папку `/ (root)`.
-5. Сохраните настройки. Через некоторое время сайт будет доступен по адресу `https://ВАШ-ЛОГИН.github.io/todo-list/`.
