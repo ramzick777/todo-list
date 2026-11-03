@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Мои задачи — To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="eyebrow">ПЛАНИРОВЩИК</div>
+      <h1>Мои задачи<span>.</span></h1>
+      <p class="subtitle">Небольшие шаги — большие результаты.</p>
+    </header>
+
+    <section class="panel" aria-label="Список задач">
+      <form id="task-form" class="task-form">
+        <input id="task-input" type="text" placeholder="Что нужно сделать?" maxlength="120" autocomplete="off" aria-label="Новая задача">
+        <button type="submit">Добавить <span aria-hidden="true">＋</span></button>
+      </form>
+
+      <div class="toolbar">
+        <div class="stats"><strong id="remaining-count">0</strong> осталось</div>
+        <div class="filters" role="group" aria-label="Фильтр задач">
+          <button class="filter active" data-filter="all" type="button">Все</button>
+          <button class="filter" data-filter="active" type="button">Активные</button>
+          <button class="filter" data-filter="completed" type="button">Готовые</button>
+        </div>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+      <div id="empty-state" class="empty-state">
+        <div class="empty-icon">✦</div>
+        <strong>Пока здесь пусто</strong>
+        <span>Добавьте первую задачу — и начнём!</span>
+      </div>
+
+      <footer class="panel-footer">
+        <span id="total-count">0 задач</span>
+        <button id="clear-completed" class="clear-button" type="button">Удалить выполненные</button>
+      </footer>
+    </section>
+    <p class="storage-note"><span>●</span> Ваши задачи сохраняются автоматически на этом устройстве</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
